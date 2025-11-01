@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelcyn Newton - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>Kelcyn Newton</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hello, I'm <span class="highlight">Kelcyn Newton</span></h1>
+                <p class="hero-subtitle">Developer | Branding Specialist | Copywriter</p>
+                <p class="hero-description">Creating digital experiences and compelling brand narratives with the power of AI and creativity.</p>
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a multi-disciplinary creative professional who combines development, branding, and copywriting to bring ideas to life. With the help of AI tools, I've been exploring the world of coding and web development, creating functional and beautiful digital solutions.</p>
+                    <p>My expertise spans across:</p>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-code"></i> Web Development (HTML, CSS, JavaScript)</li>
+                        <li><i class="fas fa-robot"></i> AI-Assisted Development</li>
+                        <li><i class="fas fa-palette"></i> Branding & Visual Identity</li>
+                        <li><i class="fas fa-pen-fancy"></i> Copywriting & Content Creation</li>
+                        <li><i class="fas fa-share-alt"></i> Social Media Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="social-media">Social Media</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="copywriting">Copywriting</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Portfolio items will be loaded from JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-description">Interested in working together? Let's connect!</p>
+                <div class="contact-methods">
+                    <a href="mailto:contact@kelcynnewton.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://linkedin.com/in/kelcynnewton" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://twitter.com/kelcynnewton" target="_blank" class="contact-item">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kelcyn Newton. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/portfolio-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
