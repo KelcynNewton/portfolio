@@ -250,6 +250,10 @@ section {
     display: none;
 }
 
+.portfolio-item:not(.hidden) {
+    animation: fadeInUp 0.5s ease;
+}
+
 .portfolio-image {
     width: 100%;
     height: 220px;

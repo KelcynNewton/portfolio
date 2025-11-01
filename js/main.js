@@ -19,14 +19,15 @@ function initNavigation() {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
-    }
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+        // Close mobile menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
         });
-    });
+    }
 }
 
 // Load Portfolio Items
@@ -98,8 +99,6 @@ function initPortfolioFilters() {
             portfolioItems.forEach(item => {
                 if (filterValue === 'all' || item.dataset.category === filterValue) {
                     item.classList.remove('hidden');
-                    // Add fade-in animation
-                    item.style.animation = 'fadeInUp 0.5s ease';
                 } else {
                     item.classList.add('hidden');
                 }
